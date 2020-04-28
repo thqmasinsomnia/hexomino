@@ -2,14 +2,15 @@
 
 function setup() {
     createCanvas(1500, 1500);
-    frameRate(10);
+    
 }
 var peiceNum = 0;   
+
+/*
 function draw() {
     background(0)
     fill(255);
     rect(600, 600, 300, 300);
-    
     
     if (mouseIsPressed) {
 
@@ -30,8 +31,20 @@ function draw() {
         }
     }
 }
-/*
-
 
 */
+
+
+function draw() {
+    background(0);
+    for (var y = 0; y < 15; y++) {
+        for (var x = 0; x < 15; x++) {
+            if (board[x][y] != 0) {
+                fill(255);
+                rect(y * 100, x * 100, 100, 100);
+            }
+        }
+    }
+}
+
 
